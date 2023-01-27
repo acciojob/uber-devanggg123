@@ -24,12 +24,13 @@ public class Customer {
     public Customer() {
     }
 
-    public int getCustomerid() {
+
+    public int getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerid(int customerid) {
-        this.customerId = customerid;
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
     }
 
     public String getMobile() {
