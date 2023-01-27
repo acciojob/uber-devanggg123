@@ -2,11 +2,12 @@ package com.driver.model;
 import javax.persistence.*;
 import java.util.List;
 
+@Entity
 public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int customerid;
+    private int customerId;
 
     private String mobile;
 
@@ -20,12 +21,15 @@ public class Customer {
         this.password = password;
     }
 
+    public Customer() {
+    }
+
     public int getCustomerid() {
-        return customerid;
+        return customerId;
     }
 
     public void setCustomerid(int customerid) {
-        this.customerid = customerid;
+        this.customerId = customerid;
     }
 
     public String getMobile() {
