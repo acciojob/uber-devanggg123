@@ -8,7 +8,7 @@ public class Admin {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private int AdminId;
 
     private String username;
 
@@ -23,11 +23,11 @@ public class Admin {
     }
 
     public int getId() {
-        return id;
+        return AdminId;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.AdminId = id;
     }
 
     public String getUsername() {
